@@ -45,7 +45,13 @@
   @return $prop 0.25s ease-in;
 }
 
+@mixin layout {
+  width: 1400px;
+  margin: 0 auto;
+}
+
 $primary: #f38d43;
+$tertiary: #0d6ca6;
 $background: #005589;
 $trade: 'fonts/TradeGothicLTPro-Bold';
 $happy: 'HappinessBeta-Regular';
@@ -57,10 +63,6 @@ html, body {
 body {
   background-color: $background;
   color: #fff;
-}
-
-img {
-  width: 100%;
 }
 
 h1, h2, h3 {
@@ -86,6 +88,7 @@ strong {
   background-color: $primary;
   transition: animate();
   padding: 15px 10px;
+  border-radius: 0;
 
   &:hover {
     background-color: darken($primary, 10%);
@@ -104,11 +107,10 @@ strong {
 }
 
 .hero {
+  @include layout;
   background: url(../img/hero.jpg) no-repeat center;
-  max-width: 1400px;
   height: 607px;
   background-size: cover;
-  margin: 0 auto;
 
   .container {
     position: relative;
@@ -134,8 +136,8 @@ strong {
 
 .masthead {
   background-color: $primary;
-  margin-bottom: 30px;
   position: relative;
+  @include layout;
 
   h2 {
     color: #fff;
@@ -153,13 +155,43 @@ strong {
   }
 }
 
+.blurb {
+  @include layout;
+  background-color: $tertiary;
+  font-size: rem(19);
+  line-height: 1.54rem;
+  padding: 30px 0;
+}
+
 .offers {
+  @include layout;
   background-color: #fff;
   padding: 30px 0;
+  
+  .container{
+    position: relative;
+  }
+
+  .sticker {
+    position: absolute;
+    left: -175px;
+    top: 0;
+    z-index: 1;
+  }
+
+  .col {
+    img {
+      width: 100%;
+    }
+  }
 
   .desc {
+    padding: 5px;
+    font-family: $trade;
+    text-transform: uppercase;
     font-size: rem(11);
     background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -205,4 +237,5 @@ form {
 .terms {
   margin-top: 15px;
   font-size: rem(13);
+  line-height: 1.5rem;
 }

@@ -11,6 +11,32 @@
        url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); 
 }
 
+@font-face {
+  font-family:'fonts/TradeGothicLTPro-Bold';
+  src: url('../fonts/TradeGothicLTPro-Bold_gdi.eot');
+  src: url('../fonts/TradeGothicLTPro-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TradeGothicLTPro-Bold_gdi.woff') format('woff'),
+    url('../fonts/TradeGothicLTPro-Bold_gdi.ttf') format('truetype'),
+    url('../fonts/TradeGothicLTPro-Bold_gdi.svg#TradeGothicLTPro-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+  font-family:'HappinessBeta-Regular';
+  src: url('../fonts/HappinessBeta_gdi.eot');
+  src: url('../fonts/HappinessBeta_gdi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HappinessBeta_gdi.woff') format('woff'),
+    url('../fonts/HappinessBeta_gdi.ttf') format('truetype'),
+    url('../fonts/HappinessBeta_gdi.svg#HappinessBeta-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
 @function rem($divisor) {
   @return $divisor / 16 * 1rem;
 }
@@ -21,6 +47,8 @@
 
 $primary: #f38d43;
 $background: #005589;
+$trade: 'fonts/TradeGothicLTPro-Bold';
+$happy: 'HappinessBeta-Regular';
 
 html, body {
   font-size: 16px;
@@ -31,8 +59,13 @@ body {
   color: #fff;
 }
 
+img {
+  width: 100%;
+}
+
 h1, h2, h3 {
   color: $primary;
+  font-family: $trade;
 }
 
 strong {
@@ -43,11 +76,12 @@ strong {
   max-width: 960px;
 }
 
-.btn {
-  
+.happy {
+  font-family: $happy;
 }
 
 .btn-primary {
+  font-family: $trade;
   text-transform: uppercase;
   background-color: $primary;
   transition: animate();
@@ -61,6 +95,7 @@ strong {
 .dropdown-toggle {
   width: 100%;
   text-align: left;
+  border-radius: 0;
 
   span {
     float: right;
@@ -89,7 +124,9 @@ strong {
   }
 
   h1 {
-    img + span {
+    width: 243px;
+
+    img +span {
       display: none;
     }
   }
@@ -113,6 +150,16 @@ strong {
     position: absolute;
     bottom: -20px;
     left: 50%;
+  }
+}
+
+.offers {
+  background-color: #fff;
+  padding: 30px 0;
+
+  .desc {
+    font-size: rem(11);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 

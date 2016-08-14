@@ -1,7 +1,6 @@
 @import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
 @import '../bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css';
 
-
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
@@ -10,4 +9,43 @@
        url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), 
        url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), 
        url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); 
+}
+
+@function rem($divisor) {
+  @return $divisor / 16 * 1rem;
+}
+
+$primary: #f38d43;
+
+html, body {
+  font-size: 16px;
+}
+
+body {
+  background-color: #005589;
+  color: #fff;
+}
+
+h1, h2, h3 {
+  color: $primary;
+}
+
+strong {
+  color: $primary;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.masthead {
+  background-color: $primary;
+
+  h2 {
+    color: #fff;
+  }
+}
+
+.terms {
+  font-size: rem(13);
 }

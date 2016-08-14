@@ -18,33 +18,61 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-          <div class='col-sm-6'>
-              <div class="form-group">
-                  <div class='input-group date' id='datetimepicker1'>
-                      <input type='text' class="form-control" />
-                      <span class="input-group-addon">
-                          <span class="glyphicon glyphicon-calendar"></span>
-                      </span>
-                  </div>
-              </div>
-          </div>
+    <div class="masthead">
+      <div class="container">
+        <h2>PRE REGISTER TO GET THE BEST PRICES ON YOUR<br>CLUB MED HOLIDAY, GUARANTEED.</h2>
       </div>
+    </div>
+    <div class="container">
+      <p>Beat the crowds and get the <strong>LOWEST price of the season</strong>, guaranteed. Book your next sunny holiday between <strong>27 and 29 September</strong> and you’ll get a guaranteed <strong>15%* off per person</strong>, as well as the best availability and choice of over 60 resorts worldwide. These prices are valid for travel between May and October 2017.</p> 
+      <p>Don’t miss out! Pre-register for this 3 day special and one of our consultants will contact you between 27 and 29 September.</p>
+      <p>Your Club Med holiday starts right now! </p>
+    </div>
+    <div class="container">
 
+      <h3>Your Club Med Holiday starts right now!</h3>
+      <p>Sit back, relax and count the days to your Club Med happy.<br>Complete the form below to register:</p>
       <form>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Title
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">Mr</a></li>
+            <li><a href="#">Ms</a></li>
+          </ul>
         </div>
         <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <input type="text" class="form-control" placeholder="First Name*">
         </div>
         <div class="form-group">
-          <label for="exampleInputFile">File input</label>
-          <input type="file" id="exampleInputFile">
-          <p class="help-block">Example block-level help text here.</p>
+          <input type="text" class="form-control" placeholder="Surname*">
+        </div>
+        <div class="form-group">
+          <div class='input-group date' id='datetimepicker1'>
+            <input type='text' class="form-control" />
+            <span class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="number" class="form-control" placeholder="Client number (if applicable)">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Telephone number*">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email address*">
+        </div>
+        <div class="form-group">
+          <div class='input-group date' id='datetimepicker2'>
+            <input type='text' class="form-control" />
+            <span class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+          </div>
         </div>
         <div class="checkbox">
           <label>
@@ -55,16 +83,17 @@
       </form>
     </div>
 
+    <div class="container terms">
+      <p>By submitting this pre-registration form for the new travel season, you are given the best chance of securing your preferred rates and resort. Get a GUARANTEED 15% off per person, (15% is capped at R8100 per person), for the period of the offer - 3 days only from 27 to 29 September. Kids under 6 years old stay free at all Club Med beach resorts.</p>
+      <p>*Terms and conditions apply</p>
+    </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
     <script src="../bower_components/moment/min/moment.min.js"></script>
     <script src="../bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-    <script type="text/javascript">
-      $(function () {
-        $('#datetimepicker1').datetimepicker();
-      });
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -15,6 +15,10 @@
   @return $divisor / 16 * 1rem;
 }
 
+@function animate($prop: all) {
+  @return $prop 0.25s ease-in;
+}
+
 $primary: #f38d43;
 $background: #005589;
 
@@ -39,8 +43,19 @@ strong {
   max-width: 960px;
 }
 
+.btn {
+  
+}
+
 .btn-primary {
+  text-transform: uppercase;
   background-color: $primary;
+  transition: animate();
+  padding: 15px 10px;
+
+  &:hover {
+    background-color: darken($primary, 10%);
+  }
 }
 
 .dropdown-toggle {
@@ -54,29 +69,93 @@ strong {
 }
 
 .hero {
-  position: relative;
+  background: url(../img/hero.jpg) no-repeat center;
+  max-width: 1400px;
+  height: 607px;
+  background-size: cover;
+  margin: 0 auto;
+
+  .container {
+    position: relative;
+    background-image: url(../img/gradient.png) repeat top left;
+  }
 
   .btn {
+    border-radius: 0;
     position: absolute;
     top: 0;
     right: 0;
+    font-size: rem(18);
+  }
+
+  h1 {
+    img + span {
+      display: none;
+    }
   }
 }
 
 .masthead {
   background-color: $primary;
+  margin-bottom: 30px;
+  position: relative;
 
   h2 {
     color: #fff;
   }
+
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent; 
+    border-top: 20px solid $primary;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+  }
 }
+
 form {
+  font-size: rem(14);
+
   h3 {
     background-color: $primary;
+    text-transform: uppercase;
     color: #fff;
+    padding: 10px;
+  }
+
+  label {
+    font-weight: normal;
+    font-size: rem(12);
+  }
+
+  .form-control{
+    border-radius: 0;
+  }
+
+  input[type="checkbox"] {
+    border: 2px solid $primary;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .form-block {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    font-size: rem(24);
   }
 }
 
 .terms {
+  margin-top: 15px;
   font-size: rem(13);
 }

@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Club Med</title>
 
     <!-- Bootstrap -->
-    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,6 +19,11 @@
     <![endif]-->
   </head>
   <body>
+    <div class="hero">
+      <h1>club Med</h1>
+      <button class="btn btn-primary"><i class="fa fa-angle-left"></i> Back to ClubMed.co.za</button>
+      <img src="img/hero.jpg" alt="">
+    </div>
     <div class="masthead">
       <div class="container">
         <h2>PRE REGISTER TO GET THE BEST PRICES ON YOUR<br>CLUB MED HOLIDAY, GUARANTEED.</h2>
@@ -26,46 +32,80 @@
     <div class="container">
       <p>Beat the crowds and get the <strong>LOWEST price of the season</strong>, guaranteed. Book your next sunny holiday between <strong>27 and 29 September</strong> and you’ll get a guaranteed <strong>15%* off per person</strong>, as well as the best availability and choice of over 60 resorts worldwide. These prices are valid for travel between May and October 2017.</p> 
       <p>Don’t miss out! Pre-register for this 3 day special and one of our consultants will contact you between 27 and 29 September.</p>
-      <p>Your Club Med holiday starts right now! </p>
+      <p>Your Club Med holiday starts right now!</p>
     </div>
     <div class="container">
-
       <h3>Your Club Med Holiday starts right now!</h3>
       <p>Sit back, relax and count the days to your Club Med happy.<br>Complete the form below to register:</p>
       <form>
-        <div class="dropdown">
-          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Title
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li><a href="#">Mr</a></li>
-            <li><a href="#">Ms</a></li>
-          </ul>
-        </div>
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="First Name*">
+          <h3>Personal Details</h3>
         </div>
+
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Surname*">
+          <div class="row">
+
+            <div class="col-sm-6">
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Title
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Mr</a></li>
+                  <li><a href="#">Ms</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <input type="text" class="form-control" placeholder="First Name*">
+            </div> 
+
+          </div><!-- row -->
         </div>
+
         <div class="form-group">
-          <div class='input-group date' id='datetimepicker1'>
-            <input type='text' class="form-control" />
-            <span class="input-group-addon">
-              <span class="glyphicon glyphicon-calendar"></span>
-            </span>
+          <div class="row">
+
+            <div class="col-sm-6">
+              <input type="text" class="form-control" placeholder="Surname*">
+            </div>
+
+            <div class="col-sm-6">
+              <div class='input-group date' id='datetimepicker1'>
+                <input type='text' class="form-control" />
+                <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+              </div>              
+            </div>
+
+          </div><!-- row -->
+        </div>
+
+        <div class="form-group">
+          <div class="row">
+
+            <div class="col-sm-6">
+              <input type="number" class="form-control" placeholder="Client number (if applicable)">
+            </div>
+
+            <div class="col-sm-6">              
+              <input type="text" class="form-control" placeholder="Telephone number*">
+            </div>
+
           </div>
         </div>
-        <div class="form-group">
-          <input type="number" class="form-control" placeholder="Client number (if applicable)">
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Telephone number*">
-        </div>
+
         <div class="form-group">
           <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email address*">
         </div>
+
+        <div class="form-group">
+          <h3>Booking Details</h3>
+        </div>
+
         <div class="form-group">
           <div class='input-group date' id='datetimepicker2'>
             <input type='text' class="form-control" />

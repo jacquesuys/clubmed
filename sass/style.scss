@@ -16,13 +16,14 @@
 }
 
 $primary: #f38d43;
+$background: #005589;
 
 html, body {
   font-size: 16px;
 }
 
 body {
-  background-color: #005589;
+  background-color: $background;
   color: #fff;
 }
 
@@ -38,10 +39,40 @@ strong {
   max-width: 960px;
 }
 
+.btn-primary {
+  background-color: $primary;
+}
+
+.dropdown-toggle {
+  width: 100%;
+  text-align: left;
+
+  span {
+    float: right;
+    margin-top: 7px;
+  }
+}
+
+.hero {
+  position: relative;
+
+  .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
 .masthead {
   background-color: $primary;
 
   h2 {
+    color: #fff;
+  }
+}
+form {
+  h3 {
+    background-color: $primary;
     color: #fff;
   }
 }

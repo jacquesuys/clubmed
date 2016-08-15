@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Club Med</title>
-    <link rel="icon" sizes="16x16 32x32" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./css/style.css">
@@ -89,7 +89,6 @@
               <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Title
-                  <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                   <li><a href="#">Mr</a></li>
@@ -97,6 +96,9 @@
                   <li><a href="#">Mrs</a></li>
                 </ul>
               </div><!-- dropdown -->
+
+              <!-- hidden input stores values for dropdowns -->
+          <input type="hidden" name="title" value="">
             </div>
 
             <div class="col-sm-6">
@@ -151,7 +153,6 @@
           <div class="dropdown">
             <button class="btn btn-default dropdown-toggle gold" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               South African Favourite resorts
-              <span class="caret"></span>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
               <li><a href="#">Club room</a></li>
@@ -160,13 +161,15 @@
               <li><a href="#">Suite</a></li>
             </ul>
           </div><!-- dropdown -->
+
+          <!-- hidden input stores values for dropdowns -->
+          <input type="hidden" name="favourite" value="">
         </div>
 
         <div class="form-group">
           <div class="dropdown">
             <button class="btn btn-default dropdown-toggle gold" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Try further afield
-              <span class="caret"></span>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
               <li><a href="#">Club room</a></li>
@@ -175,13 +178,15 @@
               <li><a href="#">Suite</a></li>
             </ul>
           </div><!-- dropdown -->
+
+          <!-- hidden input stores values for dropdowns -->
+          <input type="hidden" name="further" value="">
         </div>
 
         <div class="form-group">
           <div class="dropdown">
             <button class="btn btn-default dropdown-toggle gold" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Villa and chalets
-              <span class="caret"></span>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
               <li><a href="#">Club room</a></li>
@@ -190,6 +195,9 @@
               <li><a href="#">Suite</a></li>
             </ul>
           </div><!-- dropdown -->
+
+          <!-- hidden input stores values for dropdowns -->
+          <input type="hidden" name="accommodation" value="">
         </div>
 
         <div class="form-group">
@@ -199,20 +207,22 @@
               <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Are flights required through ClubMed?*
-                  <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                   <li><a href="#">Yes</a></li>
                   <li><a href="#">No</a></li>
                 </ul>
               </div><!-- dropdown -->
+
+              <!-- hidden input stores values for dropdowns -->
+              <input type="hidden" name="flights" value="">
             </div>
 
             <div class="col-sm-6">
+              
               <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Holiday duration*
-                  <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                   <li><a href="#">7 nights</a></li>
@@ -221,6 +231,9 @@
                   <li><a href="#">Other</a></li>
                 </ul>
               </div><!-- dropdown -->
+
+              <!-- hidden input stores values for dropdowns -->
+              <input type="hidden" name="duration" value="">
             </div>
 
           </div>
@@ -242,7 +255,6 @@
               <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Room Type
-                  <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                   <li><a href="#">Club room</a></li>
@@ -251,6 +263,9 @@
                   <li><a href="#">Suite</a></li>
                 </ul>
               </div><!-- dropdown -->
+
+              <!-- hidden input stores values for dropdowns -->
+              <input type="hidden" name="room" value="">
             </div>
 
           </div>
@@ -263,7 +278,6 @@
               <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Number of adults*
-                  <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                   <li><a href="#">1</a></li>
@@ -278,13 +292,15 @@
                   <li><a href="#">More</a></li>
                 </ul>
               </div><!-- dropdown -->
+
+              <!-- hidden input stores values for dropdowns -->
+              <input type="hidden" name="adults" value="">
             </div>
 
             <div class="col-sm-6">
               <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Number of children*
-                  <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                   <li><a href="#">1</a></li>
@@ -298,6 +314,9 @@
                   <li><a href="#">9</a></li>
                 </ul>
               </div><!-- dropdown -->
+
+              <!-- hidden input stores values for dropdowns -->
+              <input type="hidden" name="children" value="">
             </div>
 
           </div>
@@ -310,13 +329,13 @@
               <div class="form-block">
                 <h4>Required Services</h4>
                 <label>
-                  <input type="checkbox"> Mini Club Med (4-10) All inclusive
+                  <input type="checkbox" name="mini"> Mini Club Med (4-10) All inclusive
                 </label>
                 <label>
-                  <input type="checkbox"> Petit Club Med (for ages 2-3) *Additional charge
+                  <input type="checkbox" name="petit"> Petit Club Med (for ages 2-3) *Additional charge
                 </label>
                 <label>
-                  <input type="checkbox"> Baby Club Med (4-23 months) *Additional charge
+                  <input type="checkbox" name="baby"> Baby Club Med (4-23 months) *Additional charge
                 </label>
               </div>
             </div>
@@ -325,14 +344,16 @@
               <textarea rows="3" placeholder="Other infomation?"></textarea>
               <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Are you a travel agent?
-                  <span class="caret"></span>
+                  Are you a travel agent?                 
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                   <li><a href="#">Yes</a></li>
                   <li><a href="#">No</a></li>
                 </ul>
               </div><!-- dropdown -->
+
+              <!-- hidden input stores values for dropdowns -->
+              <input type="hidden" name="agent" value="">
             </div>
 
           </div>

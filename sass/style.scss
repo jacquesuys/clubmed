@@ -234,6 +234,7 @@ form {
     }
   }
 
+  // Overrides the dropdown styling for gold buttons
   .dropdown.open >.btn-default.dropdown-toggle.gold {
     background-color: darken($gold, 10%);
   }
@@ -252,6 +253,12 @@ form {
 
   .dropdown-toggle {
     color: $gray;
+
+    &:after {
+      float: right;
+      @extend .glyphicon;
+      content: "\e259";
+    }
   }
 
   .form-block {

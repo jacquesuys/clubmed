@@ -10,4 +10,9 @@ $(document).ready(function() {
     $root.find('.btn').text(text);
     $root.parent().find('input[type="hidden"]').val(text);
   });
+
+  $('form').on('submit', function(e) {
+    e.preventDefault();
+    $('#myModal').modal('show');
+  });
 });

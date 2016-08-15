@@ -12,7 +12,11 @@ $(document).ready(function() {
   });
 
   $('form').on('submit', function(e) {
+    // '/([0-9, A-Z])\w+/'
     e.preventDefault();
-    $('#myModal').modal('show');
+    console.log($(this).serialize());
+    // $('#myModal').modal('show');
+
+    $(this).addClass('errors');
   });
 });

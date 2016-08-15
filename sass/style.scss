@@ -249,6 +249,7 @@ form {
 
   textarea {
     width: 100%;
+    padding: 6px 12px;
   }
 
   .dropdown-toggle {
@@ -258,6 +259,7 @@ form {
       float: right;
       @extend .glyphicon;
       content: "\e259";
+      color: $primary;
     }
   }
 

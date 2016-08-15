@@ -12,7 +12,7 @@
 }
 
 @font-face {
-  font-family:'fonts/TradeGothicLTPro-Bold';
+  font-family:'TradeGothicLTPro-Bold';
   src: url('../fonts/TradeGothicLTPro-Bold_gdi.eot');
   src: url('../fonts/TradeGothicLTPro-Bold_gdi.eot?#iefix') format('embedded-opentype'),
     url('../fonts/TradeGothicLTPro-Bold_gdi.woff') format('woff'),
@@ -52,8 +52,10 @@
 
 $primary: #f38d43;
 $tertiary: #0d6ca6;
+$gray: rgb(68, 68, 68);
+$gold: #d8bf84;
 $background: #005589;
-$trade: 'fonts/TradeGothicLTPro-Bold';
+$trade: 'TradeGothicLTPro-Bold';
 $happy: 'HappinessBeta-Regular';
 
 html, body {
@@ -195,8 +197,17 @@ strong {
   }
 }
 
+.form-container {
+  h3 {
+    text-transform: uppercase;
+  }
+}
+
 form {
+  font-family: $happy;
   font-size: rem(14);
+  /* For the datepickers; overrides the #fff */
+  color: $gray;
 
   h3 {
     background-color: $primary;
@@ -213,13 +224,34 @@ form {
   .form-control{
     border-radius: 0;
   }
+  
+  .gold {
+    background-color: $gold;
+    border-color: $gold;
+
+    &:hover {
+      background-color: darken($gold, 10%);
+    }
+  }
+
+  .dropdown.open >.btn-default.dropdown-toggle.gold {
+    background-color: darken($gold, 10%);
+  }
 
   input[type="checkbox"] {
     border: 2px solid $primary;
   }
 
+  input[type="email"] {
+    margin-bottom: 30px;
+  }
+
   textarea {
     width: 100%;
+  }
+
+  .dropdown-toggle {
+    color: $gray;
   }
 
   .form-block {

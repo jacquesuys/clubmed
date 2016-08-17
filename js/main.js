@@ -39,6 +39,33 @@ $(document).ready(function() {
       }
     }
 
+    // * = non hidden inputs
+
+    // title
+    // first name *
+    // surname *
+    // birth
+    // client *
+    // tel *
+    // email *
+    // favourite
+    // afield
+    // room
+    // flights
+    // duration
+    // arrival
+    // room
+    // adults
+    // children
+    // mini *
+    // petit *
+    // baby *
+    // agent
+    // newsletter *
+
+
+
+
     e.preventDefault();
     console.log($(this).serialize());
     // $('#myModal').modal('show');

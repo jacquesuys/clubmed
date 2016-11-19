@@ -133,6 +133,13 @@ strong {
     font-size: rem(18);
   }
 
+  .sticker {
+    transform: translateY(50%);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
   h1 {
     width: 243px;
 
@@ -177,13 +184,6 @@ strong {
   
   .container{
     position: relative;
-  }
-
-  .sticker {
-    position: absolute;
-    left: -175px;
-    top: 0;
-    z-index: 1;
   }
 
   .col {
@@ -235,7 +235,7 @@ form {
     border-color: $silver;
 
     &:hover {
-      background-color: darken($gold, 10%);
+      background-color: darken($silver, 10%);
     }
   }
 
@@ -265,7 +265,7 @@ form {
       float: right;
       @extend .glyphicon;
       content: "\e259";
-      color: $primary;
+      color: #000;
     }
   }
 

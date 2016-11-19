@@ -50,11 +50,13 @@
   margin: 0 auto;
 }
 
-$primary: #f38d43;
-$tertiary: #0d6ca6;
+$primary: #D7BD87;
+$secondary: #656565;
+$tertiary: #656565;
 $gray: rgb(68, 68, 68);
 $gold: #d8bf84;
-$background: #005589;
+$silver: #A7A7A7;
+$background: #000;
 $trade: 'TradeGothicLTPro-Bold';
 $happy: 'HappinessBeta-Regular';
 
@@ -82,6 +84,10 @@ strong {
 
 .happy {
   font-family: $happy;
+}
+
+.btn {
+  border: 0;
 }
 
 .btn-primary {
@@ -159,7 +165,6 @@ strong {
 
 .blurb {
   @include layout;
-  background-color: $tertiary;
   font-size: rem(19);
   line-height: 1.54rem;
   padding: 30px 0;
@@ -210,7 +215,7 @@ form {
   color: $gray;
 
   h3 {
-    background-color: $primary;
+    background-color: $secondary;
     text-transform: uppercase;
     color: #fff;
     padding: 10px;
@@ -226,8 +231,8 @@ form {
   }
   
   .gold {
-    background-color: $gold;
-    border-color: $gold;
+    background-color: $silver;
+    border-color: $silver;
 
     &:hover {
       background-color: darken($gold, 10%);
@@ -243,7 +248,7 @@ form {
     border: 2px solid $primary;
   }
 
-  input[type="email"] {
+  .email .error {
     margin-bottom: 30px;
   }
 
@@ -264,6 +269,11 @@ form {
     }
   }
 
+  .child-dob {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
   .form-block {
     background-color: #fff;
     color: #333;
@@ -276,8 +286,7 @@ form {
 
   &.errors .error {
     display: block;
-    border: solid 1px red;
-    height: 31px;
+    height: 21px;
     color: red;
     padding: 5px 10px;
   }
@@ -292,4 +301,8 @@ form {
   margin-top: 15px;
   font-size: rem(13);
   line-height: 1.5rem;
+}
+
+.modal {
+  color:$gray;
 }

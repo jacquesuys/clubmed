@@ -32,16 +32,16 @@
 
     <div class="masthead">
       <div class="container">
-        <h2>PRE REGISTER TO GET THE BEST PRICES ON YOUR<br>CLUB MED HOLIDAY, GUARANTEED.</h2>
+        <h2>PRE REGISTER TO SECURE YOUR BLACK FRIDAY DEALS, AND GET UP TO 30% OFF SELECTED SUNNY AND SNOW RESORTS</h2>
         <div class="arrow-down"></div>
       </div>
     </div>
 
     <div class="blurb happy">
       <div class="container">
-        <p>Beat the crowds and get the <strong>LOWEST price of the season</strong>, guaranteed. Book your next sunny holiday between <strong>27 and 29 September</strong> and you’ll get a guaranteed <strong>15%* off per person</strong>, as well as the best availability and choice of over 60 resorts worldwide. These prices are valid for travel between May and October 2017.</p> 
-        <p>Don’t miss out! Pre-register for this 3 day special and one of our consultants will contact you between 27 and 29 September.</p>
-        <p>Your Club Med holiday starts right now!</p>
+        <p>As a Club Med Great Rewards member, you have the opportunity to pre-register for the Black Friday Deals. Book your sunny or snow holiday between <strong>25 and 29 November</strong> and <strong>get up to 30%* off</strong> selected resorts, based on availability.</p>
+
+        <p>Bookings are limited, so don’t delay, secure the best deal of the year right now and a Club Med consultant will contact you between 25 and 29 November to complete your booking.</p>
       </div>
     </div>
 
@@ -77,6 +77,7 @@
         <p>Sit back, relax and count the days to your Club Med happy.</p> 
         <p>Complete the form below to register:</p>
       </div>
+
       <form>
         <div class="form-group">
           <h3>Personal Details</h3>
@@ -103,7 +104,7 @@
             </div>
 
             <div class="col-sm-6">
-              <input type="text" class="form-control" placeholder="First Name*">
+              <input type="text" name="firstname" class="form-control" placeholder="First Name*">
               <div class="error"></div>
             </div> 
 
@@ -114,13 +115,13 @@
           <div class="row">
 
             <div class="col-sm-6">
-              <input type="text" class="form-control" placeholder="Surname*">
+              <input type="text" class="form-control" placeholder="Surname*" name="surname">
               <div class="error"></div>
             </div>
 
             <div class="col-sm-6">
               <div class='input-group date' id='datetimepicker1'>
-                <input type='text' class="form-control"  placeholder="Date of birth*"/>
+                <input type="text" name="dob" class="form-control"  placeholder="Date of birth*"/>
                 <span class="input-group-addon">
                   <span class="glyphicon glyphicon-calendar"></span>
                 </span>
@@ -135,20 +136,20 @@
           <div class="row">
 
             <div class="col-sm-6">
-              <input type="number" class="form-control" placeholder="Client number (if applicable)">
+              <input type="number" name="client" class="form-control" placeholder="Client number (if applicable)">
               <div class="error"></div>
             </div>
 
             <div class="col-sm-6">              
-              <input type="text" class="form-control" placeholder="Telephone number*">
+              <input type="text" name="tel" class="form-control" placeholder="Telephone number*">
               <div class="error"></div>
             </div>
 
           </div>
         </div>
 
-        <div class="form-group">
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email address*">
+        <div class="form-group email">
+          <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email address*">
           <div class="error"></div>
         </div>
 
@@ -206,7 +207,7 @@
           </div><!-- dropdown -->
 
           <!-- hidden input stores values for dropdowns -->
-          <input type="hidden" name="accommodation" value="">
+          <input type="hidden" name="villa" value="">
           <div class="error"></div>
         </div>
 
@@ -226,7 +227,7 @@
 
               <!-- hidden input stores values for dropdowns -->
               <input type="hidden" name="flights" value="">
-              <div class="error">this is some text</div>
+              <div class="error">Should not show</div>
             </div>
 
             <div class="col-sm-6">
@@ -256,7 +257,7 @@
 
             <div class="col-sm-6">
               <div class='input-group date' id='datetimepicker2'>
-                <input type='text' class="form-control" placeholder="Date of arrival at resort*" />
+                <input type="text" name="arrival" class="form-control" placeholder="Date of arrival at resort*" />
                 <span class="input-group-addon">
                   <span class="glyphicon glyphicon-calendar"></span>
                 </span>
@@ -309,6 +310,7 @@
 
               <!-- hidden input stores values for dropdowns -->
               <input type="hidden" name="adults" value="">
+              <div class="error"></div>
             </div>
 
             <div class="col-sm-6">
@@ -331,6 +333,7 @@
 
               <!-- hidden input stores values for dropdowns -->
               <input type="hidden" name="children" value="">
+              <div class="error"></div>
             </div>
 
           </div>
@@ -355,11 +358,11 @@
             </div>
 
             <div class="col-sm-6">
-              <textarea rows="4" placeholder="Other infomation?"></textarea>
+              <textarea rows="4" name="info" placeholder="Other infomation?"></textarea>
               <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Are you a travel agent?                 
-                </button>
+                </butt2on>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                   <li><a href="#">Yes</a></li>
                   <li><a href="#">No</a></li>
@@ -382,6 +385,7 @@
         </div>
         <button type="submit" class="btn btn-primary">Click to Submit</button>
       </form>
+
     </div>
 
     <div class="container terms">
@@ -394,14 +398,13 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Modal title</h4>
+            <h4 class="modal-title">Thank You!</h4>
           </div>
           <div class="modal-body">
-            <p>One fine body&hellip;</p>
+            <p></p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-primary">Close</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
